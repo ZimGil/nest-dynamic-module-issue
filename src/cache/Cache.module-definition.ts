@@ -8,4 +8,4 @@ export interface ICacheModuleOptions {
 }
 
 export const { ConfigurableModuleClass, MODULE_OPTIONS_TOKEN } =
-  new ConfigurableModuleBuilder().build();
+  new ConfigurableModuleBuilder<ICacheModuleOptions>().build();
