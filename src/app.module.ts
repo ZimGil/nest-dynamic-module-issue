@@ -5,7 +5,6 @@ import { CacheModule } from './cache/cache.module';
 
 @Module({
   imports: [
-    CacheModule,
     CacheModule.register({ host: 'localhost', port: '6379', db: 0 }),
   ],
   controllers: [AppController],
